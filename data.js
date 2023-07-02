@@ -26,7 +26,7 @@ var data = [
     },
     {
       "hinh_anh": "/images/hetcuu.webp",
-      "ten": "Rewrite",
+      "ten": "Đang chỉnh sửa",
       "dich_thuat": 50,
       "bien_tap": 70,
       "ki_thuat": 90,
@@ -40,7 +40,7 @@ var data = [
       "bien_tap": 70,
       "ki_thuat": 90,
       "mi_thuat": 0,
-      "trang_thai": 1
+      "trang_thai": 2
     },
     {
       "hinh_anh": "/images/hetcuu.webp",
@@ -49,7 +49,7 @@ var data = [
       "bien_tap": 70,
       "ki_thuat": 90,
       "mi_thuat": 0,
-      "trang_thai": 1
+      "trang_thai": 3
     },
     {
       "hinh_anh": "/images/hetcuu.webp",
@@ -58,15 +58,6 @@ var data = [
       "bien_tap": 70,
       "ki_thuat": 90,
       "mi_thuat": 0,
-      "trang_thai": 1
-    },
-    {
-      "hinh_anh": "/images/hetcuu.webp",
-      "ten": "Rewrite",
-      "dich_thuat": 50,
-      "bien_tap": 70,
-      "ki_thuat": 90,
-      "mi_thuat": 0,
-      "trang_thai": 1
+      "trang_thai": 4
     }
 ]
