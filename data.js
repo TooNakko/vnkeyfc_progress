@@ -12,7 +12,7 @@
 */
 var data = [
     {
-      "hinh_anh": "/images/Clannad_game_cover.jpg",
+      "hinh_anh": "./images/Clannad_game_cover.jpg",
       "ten": "Clannad",
       "dich_thuat": 100,
       "dich_thuat_chi_tiet": "227055/227055",
