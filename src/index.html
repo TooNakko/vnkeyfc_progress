@@ -37,26 +37,69 @@
       </div>
     </div>
   </div>
+  <script src="data.js"></script>
   <script>
     var rootElement = document.getElementById("root");
     var html = "";
-    for (var i = 0; i < 7; i++)
+    console.log(data.length);
+    console.log(data[0].ten);
+    for (var i = 0; i < data.length; i++)
     {
       html += `
-      <div class="card card-compact w-60 md:w-56 xl:w-72 bg-base-100 shadow-xl">
+      <div class="card card-compact w-64 md:w-60 xl:w-72 bg-base-100 shadow-xl">
           <figure class="h-72 md:w-68 xl:h-96">
-              <img class="object-cover w-full h-full" src="/src/assets/images/Clannad_game_cover.jpg" alt="Shoes" />
+              <img class="object-cover w-full h-full" src="${data[i].hinh_anh}" alt="${data[i].ten}" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title text-2xl">Clannad</h2>
-            <div class="flex">
-              <span class="flex-initial mr-1">Dịch thuật</span>
-              <span class="flex-auto">
-                <progress class="progress w-full" value="50" max="100"></progress>
+            <h2 class="card-title text-2x">${data[i].ten}</h2>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4">Dịch thuật</span>
+              <span class="col-span-6 tooltip" data-tip="${data[i].dich_thuat_chi_tiet || data[i].dich_thuat +'/100'}">
+                <progress class="progress w-full" value="${data[i].dich_thuat}" max="100"></progress>
               </span>
-              <span class="flex-initial ml-1">50%</span>
+              <span class="col-span-2">${data[i].dich_thuat}%</span>
             </div>
-            <h3 class=" text-lg text-success text-center font-bold">Đã hoàn thành</h3>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4">Biên tập</span>
+              <span class="col-span-6 tooltip" data-tip="${data[i].bien_tap_chi_tiet || data[i].bien_tap +'/100'}">
+                <progress class="progress w-full" value="${data[i].bien_tap}" max="100"></progress>
+              </span>
+              <span class=col-span-2">${data[i].bien_tap}%</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4">Kĩ thuật</span>
+              <span class="col-span-6 tooltip" data-tip="${data[i].ki_thuat_chi_tiet || data[i].ki_thuat +'/100'}">
+                <progress class="progress w-full" value="${data[i].ki_thuat}" max="100"></progress>
+              </span>
+              <span class=col-span-2">${data[i].mi_thuat}%</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4">Mĩ thuật</span>
+              <span class="col-span-6 tooltip" data-tip="${data[i].mi_thuat_chi_tiet || data[i].mi_thuat +'/100'}">
+                <progress class="progress w-full" value="${data[i].mi_thuat}" max="100"></progress>
+              </span>
+              <span class=col-span-2">${data[i].mi_thuat}%</span>
+            </div>
+      `;
+      switch (data[i].trang_thai)
+      {
+        case 0:
+          html += `<h3 class=" text-lg text-success text-center font-bold">Đã hoàn thành</h3>`;
+          break;
+        case 1:
+          html += `<h3 class=" text-lg text-info text-center font-bold">Đang thực hiện</h3>`;
+          break;
+        case 2:
+          html += `<h3 class=" text-lg text-warning text-center font-bold">Tạm dừng</h3>`;
+          break;
+        case 3:
+          html += `<h3 class=" text-lg text-error text-center font-bold">Hoãn vô thời hạn</h3>`;
+          break;
+        default:
+          html += `<h3 class=" text-lg text-neutral text-center font-bold">Chưa thực hiện</h3>`;
+          break;
+      }
+      html += `
           </div>
         </div>
       `;
