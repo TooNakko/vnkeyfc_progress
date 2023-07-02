@@ -29,7 +29,7 @@ var data = [
       "ten": "Đang chỉnh sửa",
       "dich_thuat": 50,
       "bien_tap": 70,
-      "ki_thuat": 90,
+      "ki_thuat": 80,
       "mi_thuat": 0,
       "trang_thai": 1
     },
