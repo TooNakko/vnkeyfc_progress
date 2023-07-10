@@ -61,7 +61,7 @@ var data = [
       "trang_thai": 2
     },
     {
-      "hinh_anh": "./images/LittleBusters.jpg",
+      "hinh_anh": "./images/Little_Busters.jpg",
       "ten": "Little Busters!",
       "dich_thuat": 0,
       "bien_tap": 0,
@@ -70,7 +70,7 @@ var data = [
       "trang_thai": 1
     },
     {
-      "hinh_anh": "/images/Stella.png",
+      "hinh_anh": "./images/Stella.png",
       "ten": "Stella of the end",
       "dich_thuat": 100,
       "bien_tap": 60,
