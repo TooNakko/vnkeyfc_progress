@@ -34,16 +34,16 @@ var data = [
       "trang_thai": 0
     },
     {
-      "hinh_anh": "./images/Tomoyo.webp",
+      "hinh_anh": "./images/clannad_hikarisaka.webp",
       "ten": "CLANNAD - Trên ngọn đồi có ánh sáng chở che",
       "dich_thuat": 100,
-      "bien_tap": 0,
-      "ki_thuat": 50,
-      "mi_thuat": 20,
-      "trang_thai": 2
+      "bien_tap": 100,
+      "ki_thuat": 100,
+      "mi_thuat": 100,
+      "trang_thai": 0
     },
     {
-      "hinh_anh": "./images/Tomoyo.webp",
+      "hinh_anh": "./images/tomoyo.webp",
       "ten": "Tomoyo After",
       "dich_thuat": 100,
       "bien_tap": 0,
