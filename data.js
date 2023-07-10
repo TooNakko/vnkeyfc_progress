@@ -12,6 +12,15 @@
 */
 var data = [
     {
+      "hinh_anh": "/images/AIR.jpg",
+      "ten": "AIR",
+      "dich_thuat": 50,
+      "bien_tap": 0,
+      "ki_thuat": 90,
+      "mi_thuat": 0,
+      "trang_thai": 1
+    },
+    {
       "hinh_anh": "./images/Clannad_game_cover.jpg",
       "ten": "CLANNAD",
       "dich_thuat": 100,
@@ -23,14 +32,6 @@ var data = [
       "mi_thuat": 100,
       "mi_thuat_chi_tiet": null,
       "trang_thai": 0
-    },{
-      "hinh_anh": "/images/AIR.jpg",
-      "ten": "AIR",
-      "dich_thuat": 50,
-      "bien_tap": 0,
-      "ki_thuat": 90,
-      "mi_thuat": 0,
-      "trang_thai": 1
     },
     {
       "hinh_anh": "/images/Tomoyo.jpg",
@@ -60,23 +61,25 @@ var data = [
       "trang_thai": 2
     },
     {
-      "hinh_anh": "/images/LittleBusters.webp",
+      "hinh_anh": "/images/LittleBusters.jpg",
       "ten": "Little Busters!",
       "dich_thuat": 0,
       "bien_tap": 0,
       "ki_thuat": 20,
       "mi_thuat": 0,
       "trang_thai": 1
-    },{
-      "hinh_anh": "/images/Stella.webp",
+    },
+    {
+      "hinh_anh": "/images/Stella.jpg",
       "ten": "Stella of the end",
       "dich_thuat": 100,
       "bien_tap": 60,
       "ki_thuat": 90,
       "mi_thuat": 90,
       "trang_thai": 1
-    },{
-      "hinh_anh": "/images/hetcuu.webp",
+    },
+    {
+      "hinh_anh": "/images/Prima.jpg",
       "ten": "Prima Doll",
       "dich_thuat": 90,
       "bien_tap": 0,
