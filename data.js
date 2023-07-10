@@ -31,7 +31,8 @@ var data = [
       "ki_thuat_chi_tiet": null,
       "mi_thuat": 100,
       "mi_thuat_chi_tiet": null,
-      "trang_thai": 0
+      "trang_thai": 0,
+      "link_patch": "https://vnkeyfc.com/resource/patch/clannad-viet-hoa/"
     },
     {
       "hinh_anh": "./images/clannad_hikarisaka.webp",
@@ -41,6 +42,7 @@ var data = [
       "ki_thuat": 100,
       "mi_thuat": 100,
       "trang_thai": 0
+      "link_patch": "https://vnkeyfc.com/resource/patch/clannad-ngoai-truyen-viet-hoa/"
     },
     {
       "hinh_anh": "./images/tomoyo.webp",
@@ -59,6 +61,7 @@ var data = [
       "ki_thuat": 100,
       "mi_thuat": 100,
       "trang_thai": 0
+      "link_patch": "https://vnkeyfc.com/resource/patch/rewrite-viet-hoa/"
     },
     {
       "hinh_anh": "./images/Rewrite.jpg",
@@ -85,7 +88,8 @@ var data = [
       "bien_tap": 100,
       "ki_thuat": 100,
       "mi_thuat": 100,
-      "trang_thai": 0
+      "trang_thai": 0,
+      "link_patch": "https://vnkeyfc.com/resource/patch/planetarian-qua-cau-tuyet-viet-hoa/"
     },
     {
       "hinh_anh": "./images/Angel_Beats.jpg",
