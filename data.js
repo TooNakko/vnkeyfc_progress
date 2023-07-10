@@ -12,7 +12,7 @@
 */
 var data = [
     {
-      "hinh_anh": "/images/AIR.jpg",
+      "hinh_anh": "./images/AIR.jpg",
       "ten": "AIR",
       "dich_thuat": 50,
       "bien_tap": 0,
@@ -34,7 +34,7 @@ var data = [
       "trang_thai": 0
     },
     {
-      "hinh_anh": "/images/Tomoyo.jpg",
+      "hinh_anh": "./images/Tomoyo.webp",
       "ten": "Tomoyo After",
       "dich_thuat": 100,
       "bien_tap": 0,
@@ -43,7 +43,7 @@ var data = [
       "trang_thai": 2
     },
     {
-      "hinh_anh": "/images/Rewrite.jpg",
+      "hinh_anh": "./images/Rewrite.jpg",
       "ten": "Rewrite",
       "dich_thuat": 100,
       "bien_tap": 100,
@@ -52,7 +52,7 @@ var data = [
       "trang_thai": 0
     },
     {
-      "hinh_anh": "/images/Rewritep.jpg",
+      "hinh_anh": "./images/Rewrite.jpg",
       "ten": "Rewrite+",
       "dich_thuat": 80,
       "bien_tap": 0,
@@ -61,7 +61,7 @@ var data = [
       "trang_thai": 2
     },
     {
-      "hinh_anh": "/images/LittleBusters.jpg",
+      "hinh_anh": "./images/LittleBusters.jpg",
       "ten": "Little Busters!",
       "dich_thuat": 0,
       "bien_tap": 0,
@@ -70,7 +70,7 @@ var data = [
       "trang_thai": 1
     },
     {
-      "hinh_anh": "/images/Stella.jpg",
+      "hinh_anh": "/images/Stella.png",
       "ten": "Stella of the end",
       "dich_thuat": 100,
       "bien_tap": 60,
@@ -79,7 +79,7 @@ var data = [
       "trang_thai": 1
     },
     {
-      "hinh_anh": "/images/Prima.jpg",
+      "hinh_anh": "./images/Prima.jpg",
       "ten": "Prima Doll",
       "dich_thuat": 90,
       "bien_tap": 0,
