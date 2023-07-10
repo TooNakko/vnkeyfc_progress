@@ -41,7 +41,7 @@ var data = [
       "bien_tap": 100,
       "ki_thuat": 100,
       "mi_thuat": 100,
-      "trang_thai": 0
+      "trang_thai": 0,
       "link_patch": "https://vnkeyfc.com/resource/patch/clannad-ngoai-truyen-viet-hoa/"
     },
     {
@@ -60,7 +60,7 @@ var data = [
       "bien_tap": 100,
       "ki_thuat": 100,
       "mi_thuat": 100,
-      "trang_thai": 0
+      "trang_thai": 0,
       "link_patch": "https://vnkeyfc.com/resource/patch/rewrite-viet-hoa/"
     },
     {
