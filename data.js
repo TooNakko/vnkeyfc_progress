@@ -35,6 +35,15 @@ var data = [
     },
     {
       "hinh_anh": "./images/Tomoyo.webp",
+      "ten": "CLANNAD - Trên ngọn đồi có ánh sáng chở che",
+      "dich_thuat": 100,
+      "bien_tap": 0,
+      "ki_thuat": 50,
+      "mi_thuat": 20,
+      "trang_thai": 2
+    },
+    {
+      "hinh_anh": "./images/Tomoyo.webp",
       "ten": "Tomoyo After",
       "dich_thuat": 100,
       "bien_tap": 0,
@@ -71,7 +80,7 @@ var data = [
     },
     {
       "hinh_anh": "./images/planetarian_snow_globe.png",
-      "ten": "Planetarian Snow globe",
+      "ten": "Planetarian - Quả cầu tuyết",
       "dich_thuat": 100,
       "bien_tap": 100,
       "ki_thuat": 100,
