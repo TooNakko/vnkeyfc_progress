@@ -12,7 +12,7 @@
 */
 var data = [
     {
-      "hinh_anh": "./images/AIR.jpg",
+      "hinh_anh": "./images/AIR.webp",
       "ten": "AIR",
       "dich_thuat": 50,
       "bien_tap": 0,
@@ -67,6 +67,24 @@ var data = [
       "bien_tap": 0,
       "ki_thuat": 20,
       "mi_thuat": 0,
+      "trang_thai": 1
+    },
+    {
+      "hinh_anh": "./images/planetarian_snow_globe.png",
+      "ten": "Planetarian Snow globe",
+      "dich_thuat": 100,
+      "bien_tap": 100,
+      "ki_thuat": 100,
+      "mi_thuat": 100,
+      "trang_thai": 0
+    },
+    {
+      "hinh_anh": "./images/Angel_Beats.jpg",
+      "ten": "Angel Beats! 1st beat",
+      "dich_thuat": 80,
+      "bien_tap": 10,
+      "ki_thuat": 80,
+      "mi_thuat": 10,
       "trang_thai": 1
     },
     {
