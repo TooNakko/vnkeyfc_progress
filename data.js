@@ -12,7 +12,7 @@
 */
 var data = [
   {
-    hinh_anh: "./images/AIR.webp",
+    hinh_anh: "./images/AIR.png",
     ten: "AIR",
     dich_thuat: 50,
     bien_tap: 0,
@@ -96,6 +96,16 @@ var data = [
     link_patch:
       "https://vnkeyfc.com/resource/patch/planetarian-qua-cau-tuyet-viet-hoa/",
     cap_nhat_lan_cuoi: "23/4/2021",
+  },
+  {
+    hinh_anh: "./images/Lunaria.png",
+    ten: "LUNARiA",
+    dich_thuat: 40,
+    bien_tap: 0,
+    ki_thuat: 80,
+    mi_thuat: 0,
+    trang_thai: 1,
+    cap_nhat_lan_cuoi: "15/7/2021",
   },
   {
     hinh_anh: "./images/Angel_Beats.jpg",
