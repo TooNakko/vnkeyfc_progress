@@ -28,65 +28,80 @@
   <script>
     var rootElement = document.getElementById("root");
     var html = "";
-    console.log(data.length);
-    console.log(data[0].ten);
     for (var i = 0; i < data.length; i++)
     {
       html += `
       <div class="card card-compact w-40 sm:w-56 md:w-56 lg:w-64 xl:w-68 bg-base-100 shadow-xl">
-          <figure class="aspect-[8/12]">
-              <img class="object-cover w-full h-full" src="${data[i].hinh_anh}" alt="${data[i].ten}" />
-          </figure>
-          <div class="card-body">
-            <p class="card-title text-lg line-clamp-2 text-center">${data[i].ten}</p>
-            <div class="grid grid-cols-12 gap-1">
-              <span class="col-span-4">Dịch thuật</span>
-              <span class="col-span-6 tooltip" data-tip="${data[i].dich_thuat_chi_tiet || data[i].dich_thuat + '/100'}">
-                <progress class="progress w-full" value="${data[i].dich_thuat}" max="100"></progress>
-              </span>
-              <span class="col-span-2">${data[i].dich_thuat}%</span>
+          <div class="group relative overflow-hidden transition-shadow hover:shadow-xl hover:shadow-green-300/20">
+            <div class="aspect-[9/13]">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="${data[i].hinh_anh}" alt="${data[i].ten}" />
             </div>
-            <div class="grid grid-cols-12 gap-1">
-              <span class="col-span-4">Biên tập</span>
-              <span class="col-span-6 tooltip" data-tip="${data[i].bien_tap_chi_tiet || data[i].bien_tap + '/100'}">
-                <progress class="progress w-full" value="${data[i].bien_tap}" max="100"></progress>
-              </span>
-              <span class=col-span-2">${data[i].bien_tap}%</span>
+            `;
+            if (data[i].link_patch != null) {
+                html += `
+              <div class="absolute inset-0 bg-gradient-to-tl opacity-0 from-transparent via-transparent to-transparent group-hover:from-cyan-500 group-hover:via-amber-500 group-hover:to-pink-500 group-hover:opacity-30"></div>
+              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center text-center transition-all duration-500 group-hover:translate-y-0">
+                <a href="${data[i].link_patch}"
+                  class="rounded-full bg-green-400 px-3.5 py-2 font-com text-sm capitalize text-black font-semibold shadow shadow-black/60">Link patch</a>
+              </div>`;
+            }
+            html +=`
+          </div>
+          <div class="card-body !p-3">
+            <p class="card-title text-lg line-clamp-3 leading-6 text-center">${data[i].ten}</p>
+            <div class="leading-">
+              <div class="grid grid-cols-12 gap-1">
+                <span class="col-span-4">Dịch thuật</span>
+                <span class="col-span-6 tooltip" data-tip="${data[i].dich_thuat_chi_tiet || data[i].dich_thuat + '/100'}">
+                  <progress class="progress w-full" value="${data[i].dich_thuat}" max="100"></progress>
+                </span>
+                <span class="col-span-2">${data[i].dich_thuat}%</span>
+              </div>
+              <div class="grid grid-cols-12 gap-1">
+                <span class="col-span-4">Biên tập</span>
+                <span class="col-span-6 tooltip" data-tip="${data[i].bien_tap_chi_tiet || data[i].bien_tap + '/100'}">
+                  <progress class="progress w-full" value="${data[i].bien_tap}" max="100"></progress>
+                </span>
+                <span class=col-span-2">${data[i].bien_tap}%</span>
+              </div>
+              <div class="grid grid-cols-12 gap-1">
+                <span class="col-span-4">Kĩ thuật</span>
+                <span class="col-span-6 tooltip" data-tip="${data[i].ki_thuat_chi_tiet || data[i].ki_thuat + '/100'}">
+                  <progress class="progress w-full" value="${data[i].ki_thuat}" max="100"></progress>
+                </span>
+                <span class=col-span-2">${data[i].ki_thuat}%</span>
+              </div>
+              <div class="grid grid-cols-12 gap-1">
+                <span class="col-span-4">Mĩ thuật</span>
+                <span class="col-span-6 tooltip" data-tip="${data[i].mi_thuat_chi_tiet || data[i].mi_thuat + '/100'}">
+                  <progress class="progress w-full" value="${data[i].mi_thuat}" max="100"></progress>
+                </span>
+                <span class=col-span-2">${data[i].mi_thuat}%</span>
+              </div>
             </div>
-            <div class="grid grid-cols-12 gap-1">
-              <span class="col-span-4">Kĩ thuật</span>
-              <span class="col-span-6 tooltip" data-tip="${data[i].ki_thuat_chi_tiet || data[i].ki_thuat + '/100'}">
-                <progress class="progress w-full" value="${data[i].ki_thuat}" max="100"></progress>
-              </span>
-              <span class=col-span-2">${data[i].ki_thuat}%</span>
-            </div>
-            <div class="grid grid-cols-12 gap-1">
-              <span class="col-span-4">Mĩ thuật</span>
-              <span class="col-span-6 tooltip" data-tip="${data[i].mi_thuat_chi_tiet || data[i].mi_thuat + '/100'}">
-                <progress class="progress w-full" value="${data[i].mi_thuat}" max="100"></progress>
-              </span>
-              <span class=col-span-2">${data[i].mi_thuat}%</span>
-            </div>
+            <div class="text-center">
       `;
       switch (data[i].trang_thai)
       {
         case 0:
-          html += `<h3 class=" text-lg text-success text-center font-bold"><a href="${data[i].link_patch}">Đã hoàn thành</a></h3>`;
+          html += `<h3 class=" text-lg text-success font-bold"><a href="${data[i].link_patch}">Đã hoàn thành</a></h3>`;
           break;
         case 1:
-          html += `<h3 class=" text-lg text-info text-center font-bold">Đang thực hiện</h3>`;
+          html += `<h3 class=" text-lg text-info font-bold">Đang thực hiện</h3>`;
           break;
         case 2:
-          html += `<h3 class=" text-lg text-warning text-center font-bold">Tạm dừng</h3>`;
+          html += `<h3 class=" text-lg text-warning font-bold">Tạm dừng</h3>`;
           break;
         case 3:
-          html += `<h3 class=" text-lg text-error text-center font-bold">Hoãn vô thời hạn</h3>`;
+          html += `<h3 class=" text-lg text-error font-bold">Hoãn vô thời hạn</h3>`;
           break;
         default:
-          html += `<h3 class=" text-lg text-neutral text-center font-bold">Chưa thực hiện</h3>`;
+          html += `<h3 class=" text-lg text-neutral font-bold">Chưa thực hiện</h3>`;
           break;
       }
       html += `
+              <span class="text-center text-xs">Cập nhật lần cuối: ${data[i].cap_nhat_lan_cuoi}</span>
+            </div>
           </div>
         </div>
       `;
