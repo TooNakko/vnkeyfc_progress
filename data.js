@@ -19,7 +19,7 @@ var data = [
     ki_thuat: 90,
     mi_thuat: 0,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/Clannad_game_cover.jpg",
@@ -30,7 +30,7 @@ var data = [
     mi_thuat: 100,
     trang_thai: 0,
     link_patch: "https://vnkeyfc.com/clannad/",
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/clannad_hikarisaka.webp",
@@ -42,7 +42,7 @@ var data = [
     trang_thai: 0,
     link_patch:
       "https://vnkeyfc.com/resource/patch/clannad-ngoai-truyen-viet-hoa/",
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/tomoyo.webp",
@@ -52,7 +52,7 @@ var data = [
     ki_thuat: 50,
     mi_thuat: 20,
     trang_thai: 2,
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/Rewrite.jpg",
@@ -63,7 +63,7 @@ var data = [
     mi_thuat: 100,
     trang_thai: 0,
     link_patch: "https://vnkeyfc.com/resource/patch/rewrite-viet-hoa/",
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/Rewrite (1).jpg",
@@ -73,7 +73,7 @@ var data = [
     ki_thuat: 90,
     mi_thuat: 90,
     trang_thai: 2,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/Little_Busters.jpg",
@@ -83,7 +83,7 @@ var data = [
     ki_thuat: 40,
     mi_thuat: 0,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/planetarian_snow_globe.png",
@@ -95,7 +95,7 @@ var data = [
     trang_thai: 0,
     link_patch:
       "https://vnkeyfc.com/resource/patch/planetarian-qua-cau-tuyet-viet-hoa/",
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/Lunaria.png",
@@ -105,7 +105,7 @@ var data = [
     ki_thuat: 80,
     mi_thuat: 0,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/Angel_Beats.jpg",
@@ -115,7 +115,7 @@ var data = [
     ki_thuat: 80,
     mi_thuat: 10,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
   {
     hinh_anh: "./images/Stella.png",
@@ -125,7 +125,7 @@ var data = [
     ki_thuat: 90,
     mi_thuat: 90,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/primadoll.png",
@@ -135,7 +135,7 @@ var data = [
     ki_thuat: 60,
     mi_thuat: 0,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/loopers.jpg",
@@ -145,17 +145,17 @@ var data = [
     ki_thuat: 20,
     mi_thuat: 0,
     trang_thai: 1,
-    cap_nhat_lan_cuoi: "15/7/2021",
+    cap_nhat_lan_cuoi: "15/7/2023",
   },
   {
     hinh_anh: "./images/hitonatu_tw.png",
-    ten: "Hitonatsu no Yume",
+    ten: "Giấc mơ mùa hạ",
     dich_thuat: 100,
     bien_tap: 100,
     ki_thuat: 100,
     mi_thuat: 100,
     trang_thai: 0,
     link_patch: "https://vnkeyfc.com/hitonatsu/",
-    cap_nhat_lan_cuoi: "23/4/2021",
+    cap_nhat_lan_cuoi: "23/4/2023",
   },
 ];
