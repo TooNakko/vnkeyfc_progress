@@ -139,7 +139,7 @@ var data = [
   },
   {
     hinh_anh: "./images/loopers.jpg",
-    ten: "LOOOPERS",
+    ten: "LOOPERS",
     dich_thuat: 100,
     bien_tap: 0,
     ki_thuat: 20,
