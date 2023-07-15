@@ -32,7 +32,8 @@ var data = [
     "mi_thuat": 100,
     "mi_thuat_chi_tiet": null,
     "trang_thai": 0,
-    "link_patch": "https://vnkeyfc.com/resource/patch/clannad-viet-hoa/"
+    "link_patch": "https://vnkeyfc.com/resource/patch/clannad-viet-hoa/",
+    "cap_nhat_lan_cuoi": "23/4/2021"
   },
   {
     "hinh_anh": "./images/clannad_hikarisaka.webp",
@@ -42,7 +43,8 @@ var data = [
     "ki_thuat": 100,
     "mi_thuat": 100,
     "trang_thai": 0,
-    "link_patch": "https://vnkeyfc.com/resource/patch/clannad-ngoai-truyen-viet-hoa/"
+    "link_patch": "https://vnkeyfc.com/resource/patch/clannad-ngoai-truyen-viet-hoa/",
+    "cap_nhat_lan_cuoi": "23/4/2021"
   },
   {
     "hinh_anh": "./images/tomoyo.webp",
