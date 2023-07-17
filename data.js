@@ -129,7 +129,7 @@ var data = [
   },
   {
     hinh_anh: "./images/Stella.png",
-    ten: "Stella of the End",
+    ten: "Stella of The End",
     dich_thuat: 100,
     bien_tap: 42,
     ki_thuat: 90,
