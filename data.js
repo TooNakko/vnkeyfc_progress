@@ -58,7 +58,7 @@ var data = [
     hinh_anh: "./images/Rewrite.jpg",
     ten: "Rewrite",
     dich_thuat: 100,
-    bien_tap: 100,
+    bien_tap: 0,
     ki_thuat: 100,
     mi_thuat: 100,
     trang_thai: 0,
@@ -100,7 +100,7 @@ var data = [
   {
     hinh_anh: "./images/Lunaria.png",
     ten: "LUNARiA",
-    dich_thuat: 40,
+    dich_thuat: 100,
     bien_tap: 0,
     ki_thuat: 80,
     mi_thuat: 0,
