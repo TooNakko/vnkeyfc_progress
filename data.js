@@ -107,16 +107,16 @@ var data = [
       "https://vnkeyfc.com/resource/patch/planetarian-qua-cau-tuyet-viet-hoa/",
     cap_nhat_lan_cuoi: "24/12/2022",
   },
-  <!-- {
+  {
     hinh_anh: "./images/loopers.jpg",
-    ten: "LOOPERS",
+    ten: "LOOPERS (bản Steam)",
     dich_thuat: 0,
     bien_tap: 0,
     ki_thuat: 20,
     mi_thuat: 0,
     trang_thai: 4,
     cap_nhat_lan_cuoi: "7/2023",
-  }, -->
+  },
   {
     hinh_anh: "./images/Lunaria.png",
     ten: "LUNARiA",
