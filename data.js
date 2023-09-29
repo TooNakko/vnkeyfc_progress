@@ -129,7 +129,7 @@ var data = [
   },
   {
     hinh_anh: "./images/Stella.png",
-    ten: "Stella of The End",
+    ten: "Stella Mạt Thế",
     dich_thuat: 100,
     bien_tap: 100,
     ki_thuat: 100,
