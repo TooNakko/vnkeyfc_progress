@@ -96,6 +96,16 @@ var data = [
     cap_nhat_lan_cuoi: "4/2023",
   },
   {
+    hinh_anh: "./images/Harmonia.jpg",
+    ten: "Harmonia",
+    dich_thuat: 100,
+    bien_tap: 0,
+    ki_thuat: 50,
+    mi_thuat: 50,
+    trang_thai: 1,
+    cap_nhat_lan_cuoi: "10/2023",
+  },
+  {
     hinh_anh: "./images/planetarian_snow_globe.png",
     ten: "Planetarian — Quả cầu tuyết",
     dich_thuat: 100,
