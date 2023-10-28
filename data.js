@@ -134,8 +134,10 @@ var data = [
     bien_tap: 100,
     ki_thuat: 100,
     mi_thuat: 100,
-    trang_thai: 1,
-    cap_nhat_lan_cuoi: "19/10/2023",
+    trang_thai: 0,
+    link_patch:
+      "https://vnkeyfc.com/resource/patch/stella-of-the-end-viet-hoa/",    
+    cap_nhat_lan_cuoi: "27/10/2023",
   },
   {
     hinh_anh: "./images/primadoll.png",
