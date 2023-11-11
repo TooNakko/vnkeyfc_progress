@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
   <meta name="author" content="Zenith">
   <link rel="shortcut icon" href="images/flavicon.png" />
   <title>Tiến độ Việt hóa | Vietnam Key FanClub</title>
@@ -19,60 +19,100 @@
     <p class="text-lg pt-3 text-center text-info-content">
       Dưới đây là bảng tiến độ các dự án dịch thuật visual novel của Vietnam Key FanClub.
     </p>
-    <div class="flex justify-center">
+    <div class="flex items-center flex-col">
       <div id="root" class="md:p-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-7">
       </div>
+      <div class="divider"></div>
+      <h2 class="text-4xl my-6 font-bold text-center text-neutral">
+        Các dự án dịch thuật visual novel thuộc Key do đối tác thực hiện
+      </h2>
+      <div id="otherRoot" class="md:p-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-7">
+      </div>
     </div>
-  </div>
-  <script src="data.js"></script>
-  <script>
-    var rootElement = document.getElementById("root");
-    var html = "";
-    for (var i = 0; i < data.length; i++) {
-      html += `
-      <div class="card card-compact w-40 sm:w-56 md:w-56 lg:w-64 xl:w-68 bg-base-100 shadow-xl">
+    <div id="popup" class="fixed bottom-2 right-2 w-full max-w-[16rem] p-4 bg-white rounded-lg shadow" role="alert">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1">
+          <div class="w-8 h-8">
+            <img class="mask mask-squircle" src="images/help.png" alt="help">
+          </div>
+          <span class="text-base font-bold ">Giải cứu nhóm dịch</span>
+          <button type="button"
+            class="ms-auto -mx-1.5 -my-1.5 bg-white items-center justify-center flex-shrink-0 text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-9 w-9"
+            data-dismiss-target="#toast-interactive" aria-label="Close" onclick="closePopup()">
+            <span class="sr-only">Close</span>
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="text-sm font-normal">
+          <div class="text-base font-normal text-justify my-4">
+            Nếu bạn muốn đẩy nhanh tiến độ của các dự án đang dở dang, hãy cân nhắc tham gia cùng Vietnam Key FanClub.
+            Nhóm chiêu mộ thành viên ở tất cả vị trí từ dịch thuật đến kĩ thuật. Xin liên lạc với Vietnam Key FanClub
+            qua kênh Discord chính thức của nhóm.
+          </div>
+        </div>
+        <div class="ml-auto w-fit">
+          <a href="http://vnkeyfc.com/discord" class="btn btn-success btn-sm rounded-lg">Join Discord</a>
+        </div>
+      </div>
+      <script src="data.js"></script>
+      <script>
+        const closePopup = () => {
+          var item = document.getElementById('popup');
+          item.style.display = 'none';
+        }
+        var rootElement = document.getElementById("root");
+        var html = "";
+        for (var i = 0; i < data.length; i++)
+        {
+          html += `
+      <div class="card card-compact w-56 md:w-60 xl:w-68 bg-base-100 shadow-xl">
           <div class="group rounded-t-2xl relative overflow-hidden transition-shadow hover:shadow-xl hover:shadow-green-300/20">
             <div class="aspect-[9/13]">
               <img class="h-full w-full rounded-t-2xl object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="${data[i].hinh_anh}" alt="${data[i].ten}" />
             </div>
             `;
-      if (data[i].link_patch != null) {
-        html += `
+          if (data[i].link_patch != null)
+          {
+            html += `
               <div class="absolute inset-0 bg-gradient-to-tl opacity-0 from-transparent via-transparent to-transparent group-hover:from-cyan-500 group-hover:via-amber-500 group-hover:to-pink-500 group-hover:opacity-30"></div>
               <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center text-center transition-all duration-500 group-hover:translate-y-0">
                 <a href="${data[i].link_patch}"
                   class="rounded-full bg-green-400 px-3.5 py-2 font-com text-sm capitalize text-black font-semibold shadow shadow-black/60">Link patch</a>
               </div>`;
-      }
-      html += `
+          }
+          html += `
           </div>
           <div class="card-body !p-3">
             <p class="card-title text-lg line-clamp-3 leading-6 text-center">${data[i].ten}</p>
-            <div class="leading-">
+            <div class="leading text-xs md:text-sm">
               <div class="grid grid-cols-12 gap-1">
-                <span class="col-span-4">Dịch thuật</span>
-                <span class="col-span-6 tooltip" data-tip="${data[i].dich_thuat_chi_tiet || data[i].dich_thuat + '/100'}">
+                <span class="col-span-4 whitespace-nowrap">Dịch thuật</span>
+                <span class="col-span-6">
                   <progress class="progress w-full" value="${data[i].dich_thuat}" max="100"></progress>
                 </span>
                 <span class="col-span-2">${data[i].dich_thuat}%</span>
               </div>
               <div class="grid grid-cols-12 gap-1">
                 <span class="col-span-4">Biên tập</span>
-                <span class="col-span-6 tooltip" data-tip="${data[i].bien_tap_chi_tiet || data[i].bien_tap + '/100'}">
+                <span class="col-span-6">
                   <progress class="progress w-full" value="${data[i].bien_tap}" max="100"></progress>
                 </span>
                 <span class=col-span-2">${data[i].bien_tap}%</span>
               </div>
               <div class="grid grid-cols-12 gap-1">
                 <span class="col-span-4">Kĩ thuật</span>
-                <span class="col-span-6 tooltip" data-tip="${data[i].ki_thuat_chi_tiet || data[i].ki_thuat + '/100'}">
+                <span class="col-span-6">
                   <progress class="progress w-full" value="${data[i].ki_thuat}" max="100"></progress>
                 </span>
                 <span class=col-span-2">${data[i].ki_thuat}%</span>
               </div>
               <div class="grid grid-cols-12 gap-1">
                 <span class="col-span-4">Mĩ thuật</span>
-                <span class="col-span-6 tooltip" data-tip="${data[i].mi_thuat_chi_tiet || data[i].mi_thuat + '/100'}">
+                <span class="col-span-6">
                   <progress class="progress w-full" value="${data[i].mi_thuat}" max="100"></progress>
                 </span>
                 <span class=col-span-2">${data[i].mi_thuat}%</span>
@@ -80,44 +120,86 @@
             </div>
             <div class="text-center">
       `;
-      switch (data[i].trang_thai) {
-        case 0:
-          html += `<h3 class=" text-lg text-success font-bold"><a href="${data[i].link_patch}">Đã hoàn thành</a></h3>`;
-          break;
-        case 1:
-          html += `<h3 class=" text-lg text-info font-bold">Đang thực hiện</h3>`;
-          break;
-        case 2:
-          html += `<h3 class=" text-lg text-warning font-bold">Tạm dừng</h3>`;
-          break;
-        case 3:
-          html += `<h3 class=" text-lg text-error font-bold">Hoãn vô thời hạn</h3>`;
-          break;
-        default:
-          html += `<h3 class=" text-lg text-neutral font-bold">Chưa thực hiện</h3>`;
-          break;
-      }
-      html += `
+          switch (data[i].trang_thai)
+          {
+            case 0:
+              html += `<h3 class=" text-lg text-success font-bold"><a href="${data[i].link_patch}">Đã hoàn thành</a></h3>`;
+              break;
+            case 1:
+              html += `<h3 class=" text-lg text-info font-bold">Đang thực hiện</h3>`;
+              break;
+            case 2:
+              html += `<h3 class=" text-lg text-warning font-bold">Tạm dừng</h3>`;
+              break;
+            case 3:
+              html += `<h3 class=" text-lg text-error font-bold">Hoãn vô thời hạn</h3>`;
+              break;
+            default:
+              html += `<h3 class=" text-lg text-neutral font-bold">Chưa thực hiện</h3>`;
+              break;
+          }
+          html += `
               <span class="text-center text-xs">Cập nhật lần cuối: ${data[i].cap_nhat_lan_cuoi}</span>
             </div>
           </div>
         </div>
       `;
-    }
-    rootElement.innerHTML += html;
-  </script>
-  <div class="w-full  p-5 bg-gradient-to-r from-indigo-50 from-10% via-sky-50 via-30% to-emerald-50 to-90%">
-
-    <p class="text-lg pt-3 text-center text-info-content">
-      Nếu bạn muốn đẩy nhanh tiến độ của các dự án đang dở dang, hãy cân nhắc tham gia cùng Vietnam Key FanClub. Nhóm
-      chiêu mộ
-      thành viên ở tất cả vị trí từ dịch thuật đến kĩ thuật. <br />Xin liên lạc với Vietnam Key FanClub qua <a
-        href="http://vnkeyfc.com/discord" style="color: rgb(80, 0, 150); font-weight: 600;">kênh Discord chính
-        thức
-        của nhóm.</a>
-    </p>
-
-  </div>
+        }
+        rootElement.innerHTML += html;
+        // ===============================================================================================================
+        var otherRootElement = document.getElementById("otherRoot");
+        var html = "";
+        for (var i = 0; i < otherData.length; i++)
+        {
+          html += `
+      <div class="card card-compact w-40 sm:w-56 md:w-56 lg:w-64 xl:w-68 bg-base-100 shadow-xl">
+          <div class="group rounded-t-2xl relative overflow-hidden transition-shadow hover:shadow-xl hover:shadow-green-300/20">
+            <div class="aspect-[9/13]">
+              <img class="h-full w-full rounded-t-2xl object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="${otherData[i].hinh_anh}" alt="${otherData[i].ten}" />
+            </div>
+            `;
+          if (otherData[i].link_patch != null)
+          {
+            html += `
+              <div class="absolute inset-0 bg-gradient-to-tl opacity-0 from-transparent via-transparent to-transparent group-hover:from-cyan-500 group-hover:via-amber-500 group-hover:to-pink-500 group-hover:opacity-30"></div>
+              <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center text-center transition-all duration-500 group-hover:translate-y-0">
+                <a href="${otherData[i].link_patch}"
+                  class="rounded-full bg-green-400 px-3.5 py-2 font-com text-sm capitalize text-black font-semibold shadow shadow-black/60">Link patch</a>
+              </div>`;
+          }
+          html += `
+          </div>
+          <div class="card-body !p-3">
+            <p class="card-title text-lg line-clamp-3 leading-6 text-center">${otherData[i].ten}</p>
+            <span class="text-center text-sm italic">Nhóm dịch: ${otherData[i].nhom}</span>
+            <div class="text-center">
+      `;
+          switch (otherData[i].trang_thai)
+          {
+            case 0:
+              html += `<h3 class=" text-lg text-success font-bold"><a href="${otherData[i].link_patch}">Đã hoàn thành</a></h3>`;
+              break;
+            case 1:
+              html += `<h3 class=" text-lg text-info font-bold">Đang thực hiện</h3>`;
+              break;
+            case 2:
+              html += `<h3 class=" text-lg text-warning font-bold">Tạm dừng</h3>`;
+              break;
+            case 3:
+              html += `<h3 class=" text-lg text-error font-bold">Hoãn vô thời hạn</h3>`;
+              break;
+            default:
+              html += `<h3 class=" text-lg text-neutral font-bold">Chưa thực hiện</h3>`;
+              break;
+          }
+          html += `
+            </div>
+          </div>
+        </div>
+      `;
+        }
+        otherRootElement.innerHTML += html;
+      </script>
 </body>
 
 </html>
