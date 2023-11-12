@@ -170,6 +170,7 @@ var data = [
 	},
 ];
 
+// thông tin dự án dịch thuật visual novel thuộc Key do đối tác thực hiện
 var otherData = [
 	{
 		hinh_anh: "./images/Planetarian.jpg",
