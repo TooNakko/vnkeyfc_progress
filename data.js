@@ -174,7 +174,7 @@ var otherData = [
 	{
 		hinh_anh: "./images/Planetarian.jpg",
 		ten: "Planetarian HD Edition",
-		nhom: "Cab Fansub, Hoshi",
+		nhom: "Sonako-Hako, Hoshi",
 		trang_thai: 0,
 		link_patch: "http://www.hoshivsub.com/2018/08/planetarian-hd-edition.html",
 	},
