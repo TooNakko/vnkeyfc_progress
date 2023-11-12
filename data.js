@@ -105,7 +105,7 @@ var data = [
 	},
 	{
 		hinh_anh: "./images/planetarian_snow_globe.png",
-		ten: "Planetarian — Quả cầu tuyết",
+		ten: "planetarian — Quả cầu tuyết",
 		dich_thuat: 100,
 		bien_tap: 100,
 		ki_thuat: 100,
@@ -174,22 +174,22 @@ var data = [
 var otherData = [
 	{
 		hinh_anh: "./images/Planetarian.jpg",
-		ten: "Planetarian HD Edition",
-		nhom: "Sonako-Hako, Hoshi",
+		ten: "planetarian HD Edition",
+		nhom: "Sonako-Hako, Hoshi Visual Novel",
 		trang_thai: 0,
 		link_patch: "http://www.hoshivsub.com/2018/08/planetarian-hd-edition.html",
 	},
 	{
 		hinh_anh: "./images/SummerPocket.jpg",
 		ten: "Summer Pockets",
-		nhom: "Hoshi",
+		nhom: "Hoshi Visual Novel",
 		trang_thai: 0,
 		link_patch: "http://www.hoshivsub.com/2018/12/summer-pockets.html",
 	},
 	{
 		hinh_anh: "./images/SPRB.jpg",
-		ten: "Summer Pockets Reflect Blue",
-		nhom: "Hoshi",
+		ten: "Summer Pockets Reflection Blue",
+		nhom: "Hoshi Visual Novel",
 		trang_thai: 1,
 	},
 ];
