@@ -149,7 +149,7 @@ var data = [
 	},
 	{
 		hinh_anh: "./images/primadoll.png",
-		ten: "Prima Doll",
+		ten: "Prima Doll Episode 1",
 		dich_thuat: 100,
 		bien_tap: 0,
 		ki_thuat: 60,
