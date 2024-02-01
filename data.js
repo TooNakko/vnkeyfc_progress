@@ -151,11 +151,11 @@ var data = [
 		hinh_anh: "./images/primadoll.png",
 		ten: "Prima Doll Episode 1",
 		dich_thuat: 100,
-		bien_tap: 50,
+		bien_tap: 100,
 		ki_thuat: 100,
 		mi_thuat: 99,
 		trang_thai: 1,
-		cap_nhat_lan_cuoi: "1/2024",
+		cap_nhat_lan_cuoi: "2/2024",
 	},
 	{
 		hinh_anh: "./images/hitonatu_tw.png",
