@@ -153,9 +153,11 @@ var data = [
 		dich_thuat: 100,
 		bien_tap: 100,
 		ki_thuat: 100,
-		mi_thuat: 99,
-		trang_thai: 1,
-		cap_nhat_lan_cuoi: "2/2024",
+		mi_thuat: 100,
+		trang_thai: 0,
+		link_patch:
+			"https://vnkeyfc.com/resource/patch/prima-doll-ep-1-viet-hoa/",
+		cap_nhat_lan_cuoi: "9/2/2024",
 	},
 	{
 		hinh_anh: "./images/hitonatu_tw.png",
