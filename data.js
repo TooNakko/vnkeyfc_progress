@@ -80,7 +80,7 @@ var data = [
 		bien_tap: 0,
 		ki_thuat: 90,
 		mi_thuat: 90,
-		trang_thai: 1,
+		trang_thai: 2,
 		cap_nhat_lan_cuoi: "15/7/2023",
 	},
 	{
@@ -90,7 +90,7 @@ var data = [
 		bien_tap: 10,
 		ki_thuat: 80,
 		mi_thuat: 10,
-		trang_thai: 1,
+		trang_thai: 2,
 		cap_nhat_lan_cuoi: "4/2023",
 	},
 	{
