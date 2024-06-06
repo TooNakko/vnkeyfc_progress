@@ -55,10 +55,10 @@ var data = [
 	{
 		hinh_anh: "./images/Little_Busters.jpg",
 		ten: "Little Busters!",
-		dich_thuat: 1,
+		dich_thuat: 4,
 		bien_tap: 0,
-		ki_thuat: 50,
-		mi_thuat: 0,
+		ki_thuat: 75,
+		mi_thuat: 5,
 		trang_thai: 1,
 		cap_nhat_lan_cuoi: "12/2023",
 	},
